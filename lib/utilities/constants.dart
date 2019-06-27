@@ -18,3 +18,24 @@ const kButtonTextStyle = TextStyle(
 const kConditionTextStyle = TextStyle(
   fontSize: 100.0,
 );
+const api_key = '16f075595309843c72aafdbaea279737';
+
+const api_url = 'http://api.openweathermap.org/data/2.5/weather';
+const api_city_url = 'api.openweathermap.org/data/2.5/weather';
+
+const kInputDecoration = InputDecoration(
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.all(
+      Radius.circular(10.0),
+    ),
+    borderSide: BorderSide.none,
+  ),
+  filled: true,
+  fillColor: Colors.white,
+  icon: Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
+  hintText: 'Enter a search term',
+  hintStyle: TextStyle(color: Colors.grey),
+);
